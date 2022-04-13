@@ -4,7 +4,7 @@ CREATE TABLE [dbo].[DimSchool]
 [ACARA_SML_ID] [int] NOT NULL,
 [AGE_ID] [int] NULL,
 [SchoolName] [nchar] (75) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-[State] [nchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[StateCode] [nchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [Suburb] [nchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [PostCode] [int] NOT NULL,
 [SchoolSector] [nchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,

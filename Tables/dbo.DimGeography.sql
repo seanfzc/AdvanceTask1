@@ -1,4 +1,4 @@
-CREATE TABLE [dbo].[DimSuburb]
+CREATE TABLE [dbo].[DimGeography]
 (
 [SuburbID] [int] NOT NULL IDENTITY(1, 1),
 [Suburb] [nchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
@@ -11,5 +11,5 @@ CREATE TABLE [dbo].[DimSuburb]
 [District] [nchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
-ALTER TABLE [dbo].[DimSuburb] ADD CONSTRAINT [PK_DimSuburb] PRIMARY KEY CLUSTERED ([SuburbID]) ON [PRIMARY]
+ALTER TABLE [dbo].[DimGeography] ADD CONSTRAINT [PK_DimSuburb] PRIMARY KEY CLUSTERED ([SuburbID]) ON [PRIMARY]
 GO
