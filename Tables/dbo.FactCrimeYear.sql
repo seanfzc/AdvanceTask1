@@ -12,3 +12,9 @@ CREATE TABLE [dbo].[FactCrimeYear]
 GO
 ALTER TABLE [dbo].[FactCrimeYear] ADD CONSTRAINT [PK_FactCrimeYear] PRIMARY KEY CLUSTERED ([Id]) ON [PRIMARY]
 GO
+ALTER TABLE [dbo].[FactCrimeYear] ADD CONSTRAINT [FK_FactCrimeYear_DimCrimeYear] FOREIGN KEY ([CrimeKey]) REFERENCES [dbo].[DimCrimeYear] ([CrimeId])
+GO
+ALTER TABLE [dbo].[FactCrimeYear] ADD CONSTRAINT [FK_FactCrimeYear_DimGeography] FOREIGN KEY ([SuburbKey]) REFERENCES [dbo].[DimGeography] ([SuburbID])
+GO
+ALTER TABLE [dbo].[FactCrimeYear] ADD CONSTRAINT [FK_FactCrimeYear_DimState] FOREIGN KEY ([StateKey]) REFERENCES [dbo].[DimState] ([StateKey])
+GO
